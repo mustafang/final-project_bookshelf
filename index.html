@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap'
+  rel="stylesheet">
+
+  <title>Final Project Bookshelf Apps</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <nav class="nav"></nav>
+
+    <div class="content">
+      <div class="col-1">
+        <div class="user-information my-container">
+          <div class="user-img">
+            <img src="ava.jpg" alt="Avatar" />
+          </div>
+          <h1 class="username">Mia Rahmatika Zahrah</h1>
+          <p class="bio"><i class="bio-2"></i> Information System Student at UPN Veteran Jakarta </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="main_section">
+      <h2>Selamat Datang di Bookshelf</h2>
+      <p class="bio"><i class="bio-2"></i>Masukkan Buku Baru</p>
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Judul</label>
+          <input id="inputBookTitle" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input id="inputBookAuthor" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun terbit</label>
+          <input id="inputBookYear" type="number" required>
+        </div>
+        <div class="complete">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+          <input id="inputBookIsComplete" type="checkbox">
+        </div>
+        <button id="bookSubmit" type="button">Tambahkan Buku</button>
+      </form>
+    </section>
+
+    <section class="search_section">
+      <h2>Cari Buku</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Judul</label>
+        <input id="searchBookTitle" type="text">
+        <button id="searchSubmit" type="button">Cari</button>
+      </form>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Belum selesai dibaca</h2>
+      <div id="incompleteBookshelfList" class="book_list"></div>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Selesai dibaca</h2>
+      <div id="completeBookshelfList" class="book_list"></div>
+    </section>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
